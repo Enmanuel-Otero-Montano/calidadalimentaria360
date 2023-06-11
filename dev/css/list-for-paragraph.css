@@ -1,0 +1,32 @@
+.list-for-paragraph {
+    position: relative;
+    top: -60px;
+    width: min(96%, 550px);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: .95rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 4px 10px 2px hsl(0, 0%, 45%);
+    line-height: 1.4;
+}
+
+.list-for-paragraph > li {
+    margin-bottom: 5px;
+}
+
+.list-for-paragraph > li::marker {
+    color: var(--links-color);
+}
+
+.li-last-child,
+.li-first-child {
+    list-style: none;
+}
+
+@media screen and (min-width: 521px) {
+
+    .list-for-paragraph {
+        font-size: 1.1rem;
+    }
+}
